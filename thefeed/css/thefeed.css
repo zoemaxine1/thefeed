@@ -1,0 +1,48 @@
+body{
+    background: linear-gradient(to bottom, #d28fbb, #ffc4d9);
+
+    color:#582801;
+}
+
+html, body {
+    height: 100%; /* Full height of the screen */
+    margin: 300px; /* Removes default margin */
+    margin-top: 0px;
+   
+    place-items: center; /* Centers the content horizontally & vertically */
+    
+}
+
+h1 {
+	box-sizing: border-box;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+    letter-spacing: 10px;
+}
+
+
+
+h1 {
+	box-sizing: border-box;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p { 
+font-size: 30px;
+text-align: center;
+}
+
+html {
+    border-left: 300px solid #ffc4d9; /* Left border */
+    border-right: 300px solid #ffc4d9; /* Right border */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    height: 9000px;
+    
+}

@@ -1,0 +1,50 @@
+ h1 {
+	box-sizing: border-box;
+    font-family: "Lato";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
+html {
+    
+    background: linear-gradient(to bottom, #ffffff, #ff98f5);
+
+}
+
+html, body {
+    background: linear-gradient(to bottom, #ffffff, #ff98f5);
+    height: 100%; /* Full height of the screen */
+   
+    place-items: center; /* Centers the content horizontally & vertically */
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: none;
+}
+
+a{
+    text-decoration: none;
+    color:#582801;
+    text-align:center;
+    font-size: 40px;
+}
+
+
+
+nav {
+    width: 700px; /* Adjust size */
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+.gif-style {
+    width: 400px;  /* Adjust size */
+    height: auto;  /* Maintains aspect ratio */
+    place-items: top;
+
+
+}
