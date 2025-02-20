@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to bottom, #d28fbb, #ffc4d9);
+    background: linear-gradient(to bottom, #d28fbb, #ffdfea);
 
     color:#582801;
 }
@@ -13,7 +13,7 @@ html, body {
     
 }
 
-h1 {
+h1  {
 	box-sizing: border-box;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -31,10 +31,11 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    font-size: 40px;
 }
 
 p { 
-font-size: 30px;
+font-size: 10px;
 text-align: center;
 }
 
@@ -43,6 +44,104 @@ html {
     border-right: 300px solid #ffc4d9; /* Right border */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
-    height: 9000px;
+    height: 9300px;
     
 }
+
+header {
+    background-color: #ffc5e4;
+    color: rgb(64, 43, 33);
+    padding: 30px;
+    width: 150vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  img {
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: rotate(10deg); /* Rotate the image by 15 degrees */
+  }
+
+  img.hover-effect {
+    filter: grayscale(100%) sepia(50%) hue-rotate(-50deg) saturate(150%); /* Pinkish filter */
+  }
+  
+  /* Hover effect to return image to its normal state */
+  img:hover {
+    filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%); /* Remove tint */
+  }
+p{
+    
+        box-sizing: border-box;
+        font-family: "Raleway", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 20px;
+        font-style: normal;
+        letter-spacing: 8px;
+    
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;  /* Distance from the bottom */
+    right: 20px;   /* Distance from the right */
+    z-index: 1000; /* Ensure the sticker is above other content */
+}
+
+#backToTop img {
+    width: 300px;  /* You can adjust the size of the GIF */
+    height: auto; /* Keep the aspect ratio of the GIF */
+    cursor: pointer; /* Show a pointer cursor when hovering over the sticker */
+}
+
+#top {
+    position: absolute;
+    top: 0;
+}
+
+ 
+
+.container {
+    display: flex;          /* Align items horizontally */
+    justify-content: flex-start;  /* Align to the left side */
+    align-items: center;    /* Vertically center the items */
+}
+
+.image, .gif {
+    width: 150px;           /* Set the width of both the image and gif */
+    height: auto;           /* Maintain aspect ratio */
+    margin-right: 20px;     /* Add space between the image and the gif */
+}
+.top-left-gif {
+    position: fixed;      /* Fix the GIF in the viewport */
+    top: 0;               /* Align to the top of the page */
+    left: 0;              /* Align to the left of the page */
+    width: 150px;         /* Set the width of the GIF */
+    height: auto;         /* Maintain aspect ratio */
+}
+.gif-text {
+    position: absolute;
+    top: -20px; /* Adjust this value to position the text above the GIF */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally above the GIF */
+    font-size: 14px; /* Adjust the font size */
+    color: rgb(142, 96, 158); /* Text color */
+    font-weight: bold; /* Make the text bold */
+    padding: 5px;
+    border-radius: 5px; /* Optional: Make the text background rounded */
+}
+.image-container {
+    position: relative; /* Ensure we can position elements relative to this container */
+    display: inline-block;
+    background-color: rgba(124, 240, 192, 0.55); /* Set a background color with opacity */
+    width: 300px; /* Match the width of the image */
+    height: auto;
+}
+
+
