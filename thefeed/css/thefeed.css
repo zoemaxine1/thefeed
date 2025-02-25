@@ -146,7 +146,7 @@ p{
 
 .fixed-text {
     position: absolute; /* Fix the element to the viewport */
-    left: 340px; /* Move the text 20px from the left edge */
+    left: 320px; /* Move the text 20px from the left edge */
     top: 50%;
     box-sizing: border-box;
     font-family: "Raleway", serif;
