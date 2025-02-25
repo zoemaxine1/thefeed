@@ -5,7 +5,7 @@ body{
 }
 
 html, body {
-    height: 100%; /* Full height of the screen */
+    height: 300px; /* Full height of the screen */
     margin: 300px; /* Removes default margin */
     margin-top: 0px;
    
@@ -44,18 +44,20 @@ html {
     border-right: 300px solid #ffc4d9; /* Right border */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
-    height: 9300px;
+    height: 7800px;
     
 }
 
 header {
-    background-color: #ffc5e4;
-    color: rgb(64, 43, 33);
-    padding: 30px;
-    width: 150vh;
+    background-color: #ffc5e4; /* Light pink background */
+    color: rgb(64, 43, 33); /* Dark brown text */
+    padding: 50px;
+    width: 190vh; /* Adjust width */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right, white 25%, pink 50%, white 75%); /* Gradient effect */
+    border-radius: 10px; 
 
   }
 
@@ -63,9 +65,7 @@ header {
     transition: transform 0.3s ease;
   }
   
-  img:hover {
-    transform: rotate(10deg); /* Rotate the image by 15 degrees */
-  }
+  
 
   img.hover-effect {
     filter: grayscale(100%) sepia(50%) hue-rotate(-50deg) saturate(150%); /* Pinkish filter */
@@ -95,7 +95,7 @@ p{
 }
 
 #backToTop img {
-    width: 300px;  /* You can adjust the size of the GIF */
+    width: 200px;  /* You can adjust the size of the GIF */
     height: auto; /* Keep the aspect ratio of the GIF */
     cursor: pointer; /* Show a pointer cursor when hovering over the sticker */
 }
@@ -144,4 +144,128 @@ p{
     height: auto;
 }
 
+.fixed-text {
+    position: absolute; /* Fix the element to the viewport */
+    left: 370px; /* Move the text 20px from the left edge */
+    top: 50%;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 5px;
+    transform: translateY(-50%); /* Adjust the vertical position to exactly center it */
+     color: #582801; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px; /* Add some padding for better appearance */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Add a background with some transparency */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.fixed-image {
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.kirby {
+    position: absolute;
+    width: 80px; /* Set the size of the Kirby image */
+    height: 50px;
+    animation: fall 5s linear infinite; /* Adjust fall speed here */
+    opacity: 0.8;
+}
+
+/* Keyframe to animate Kirby images falling */
+@keyframes fall {
+    0% {
+        top: -60px; /* Start above the viewport */
+        left: calc(100% * var(--random-x)); /* Randomize horizontal position */
+    }
+    100% {
+        top: 100vh; /* Move to the bottom of the viewport */
+    }
+}
+
+/* Set different random values for each Kirby */
+.kirby:nth-child(1) {
+    --random-x: 0.1; /* 10% from left */
+    animation-duration: 4s;
+}
+
+.kirby:nth-child(2) {
+    --random-x: 0.3; /* 30% from left */
+    animation-duration: 5s;
+}
+
+.kirby:nth-child(3) {
+    --random-x: 0.5; /* 50% from left */
+    animation-duration: 6s;
+}
+
+.kirby:nth-child(4) {
+    --random-x: 0.7; /* 70% from left */
+    animation-duration: 7s;
+}
+
+.kirby:nth-child(5) {
+    --random-x: 0.9; /* 90% from left */
+    animation-duration: 6s;
+}
+
+.kirby:nth-child(6) {
+    --random-x: 0.2; /* 20% from left */
+    animation-duration: 5s;
+}
+
+.kirby:nth-child(7) {
+    --random-x: 0.8; /* 80% from left */
+    animation-duration: 5.5s;
+}
+
+.kirby:nth-child(8) {
+    --random-x: 0.4; /* 40% from left */
+    animation-duration: 6.5s;
+}
+
+.fixed-container {
+    display: flex; /* Aligns text and image horizontally */
+    align-items: center; /* Vertically center the text and image */
+    justify-content: center; /* Centers the entire container */
+}
+
+/* Image styling */
+.fixed-image {
+    width: 200px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+
+}
+
+/* Text styling */
+.fixed-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 400px; /* Optional: limit width of the text container */
+}
+
+.small-image {
+    width: 100px;  /* Adjust the size to your preference */
+    height: auto;  /* Maintain aspect ratio */
+    margin-top: 10px;  /* Space between the text and the image */
+}
+.fixed-container {
+    display: flex;  /* Make it a flex container */
+    flex-direction: column;  /* Stack the children (text and image) vertically */
+    align-items: center;  /* Center content horizontally */
+    justify-content: center;  /* Center content vertically if needed */
+    text-align: center;  /* Center the text */
+}
+
+.small-image {
+    width: 100px;  /* Adjust the size of the image */
+    height: auto;  /* Maintain the aspect ratio */
+    margin-top: 10px;  /* Add space between the text and the image */
+}
 
